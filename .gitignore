@@ -1,0 +1,12 @@
+out
+build
+settings.gradle
+.gradle
+.idea
+target
+*.iml
+.DS_Store
+gradlew
+gradlew.bat
+testngOutput
+gradle
