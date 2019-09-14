@@ -25,6 +25,7 @@ public class GenerateTokenAndCallService {
     private static Logger logger = LogManager.getLogger(GenerateTokenAndCallService.class.getName());
 
     static String accessToken;
+
     @Test(groups = {"requests"})
     public void testRestUtilities() throws UnrecoverableKeyException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException {
 
@@ -47,6 +48,7 @@ public class GenerateTokenAndCallService {
         logger.info(JSONUtils.getValueFromJSONArray(JSONUtils.getJSONArrayFromJSONString(jsonString, "parameters"), 0, "value"));
     }
 
+    @BeforeMethod
     public void createAccessToken() throws UnrecoverableKeyException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException {
         String certPath = FileUtils.getUserDir() + "/src/test/resources/Certificates/" + "<enterCertificateName>";
         String certPassword = "<enterPassword>";
