@@ -24,10 +24,10 @@ JSON and File Utils for extracting data with JSON String and files resp.
  ##  How to run Test:
 
  1. I have included include and exclude groups tags in build.gradle.
- 2. To run spcific groups we can manipulate those tags.
+ 2. To run specific groups we can manipulate those tags.
  3. Command: To run single class: gradle test --tests com.example.testClass
  4. Command: To run single method: gradle test --tests com.example.testClass.testMethod (include and exclude tags will have higher priority)
- 5. Command: To run all mathod from different classes: gradle test.
+ 5. Command: To run all method from different classes: gradle test.
 
  ##  Reports
  1. TestNG report will be generated in ./testngOutput"
